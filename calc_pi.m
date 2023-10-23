@@ -50,7 +50,10 @@ end
     kroznica_y = @(phi) 2+r*sin(phi);   
     plot(kroznica_x(phi),kroznica_y(phi),"k");
      
-    
+    title("Določanje \pi")
+    xlabel("x")
+    ylabel("y")    
+    legend("zunaj kroznice","znotraj kroznice"," kroznica");
     end
 
 end
