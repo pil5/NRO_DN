@@ -1,0 +1,163 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6327,        155]
+NotebookOptionsPosition[      5845,        138]
+NotebookOutlinePosition[      6246,        154]
+CellTagsIndexPosition[      6203,        151]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"vrsta", "=", 
+     RowBox[{"Normal", "[", 
+      RowBox[{"Evaluate", "[", 
+       RowBox[{"Series", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Sin", "[", "t", "]"}], "*", 
+          SuperscriptBox["t", "2"], "*", 
+          SuperscriptBox["E", 
+           RowBox[{"-", "t"}]]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"t", ",", "b", ",", "a"}], "}"}]}], "]"}], "]"}], "]"}]}], 
+    ";", 
+    RowBox[{"eks", "=", 
+     RowBox[{
+      RowBox[{"Sin", "[", "t", "]"}], "*", 
+      SuperscriptBox["t", "2"], "*", 
+      SuperscriptBox["E", 
+       RowBox[{"-", "t"}]]}]}], ";", 
+    RowBox[{"Plot", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"eks", ",", "vrsta"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "0", ",", "4"}], "}"}], ",", 
+      RowBox[{"PlotRange", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "1"}], ",", "1"}], "}"}]}]}], "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", "5", ",", "\"\<red pribli\[ZHacek]ka\>\""}], "}"}], 
+     ",", "1", ",", "10", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"b", ",", "2", ",", "\"\<okolica to\[CHacek]ke\>\""}], "}"}], 
+     ",", "0", ",", "4"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQA2IQvc/oO2+2/FvHuitikiD65ZVVyiC66pSiNog+ESCq
+D6KZ3JTB9DKXrJQcIH1mnVUaiG5LjcgD0ctMjAtB9C+faxUguur79loQPee7
+wSEQrRNjAqZPPJc4DqJVylTPgegZ/25cBtEOF5+BaZ5qzxcgerJnKJgu2fNO
+IhdIFyycIQWi3fbOVQTRH3KXg2mPPG41EC0yMUALRCsZN00E0U9Y+qaBaLGK
+63NB9LsaxcUgWvuaxQoQvYz32GYQbfRqwnYQvam/cS+I/mTqfBhsX5TLERC9
+ZOqEEyDaYWPEGRAdEXjqEoi+/H3ubRDN/WLz4iogvdo0YgmIPvxzw9IjQHpS
+7JLlIBoAuV+oNw==
+  "],
+ CellLabel->"In[14]:=",ExpressionUUID->"c585ffee-35f2-4740-ba3b-867f9b542cc6"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 5, $CellContext`b$$ = 2, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 5, "red pribli\[ZHacek]ka"}, 1, 10, 1}, {{
+       Hold[$CellContext`b$$], 2, "okolica to\[CHacek]ke"}, 0, 4}}, 
+    Typeset`size$$ = {360., {110., 115.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 5, $CellContext`b$$ = 2}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ($CellContext`vrsta = Normal[
+          Evaluate[
+           
+           Series[(Sin[$CellContext`t] $CellContext`t^2) 
+            E^(-$CellContext`t), {$CellContext`t, $CellContext`b$$, \
+$CellContext`a$$}]]]; $CellContext`eks = (
+          Sin[$CellContext`t] $CellContext`t^2) E^(-$CellContext`t); 
+       Plot[{$CellContext`eks, $CellContext`vrsta}, {$CellContext`t, 0, 4}, 
+         PlotRange -> {-1, 1}]), 
+      "Specifications" :> {{{$CellContext`a$$, 5, "red pribli\[ZHacek]ka"}, 1,
+          10, 1}, {{$CellContext`b$$, 2, "okolica to\[CHacek]ke"}, 0, 4}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {171., 177.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.9087863775410075`*^9, {3.908786451787678*^9, 3.908786553679864*^9}, {
+   3.908788756347984*^9, 3.9087887709971466`*^9}, 3.9087888074534307`*^9, {
+   3.908789004470503*^9, 3.9087890315524793`*^9}, {3.9087891341481657`*^9, 
+   3.9087891495843983`*^9}, {3.908789193457281*^9, 3.9087892313161955`*^9}, 
+   3.908789778322135*^9, {3.9087898175011144`*^9, 3.908789873717253*^9}, {
+   3.908789919840561*^9, 3.9087899384201655`*^9}, {3.9087900836293354`*^9, 
+   3.908790092829832*^9}, 3.908790278192918*^9, {3.908790456261775*^9, 
+   3.9087904861614046`*^9}, 3.9087905427453184`*^9, {3.9087906023346634`*^9, 
+   3.9087906113155136`*^9}, {3.9087914404619627`*^9, 3.908791488532613*^9}, {
+   3.908791578717067*^9, 3.9087915888959503`*^9}, {3.9087916259554453`*^9, 
+   3.908791649388118*^9}, {3.9087916817243614`*^9, 3.908791710656073*^9}, {
+   3.908791741429994*^9, 3.9087917891992407`*^9}, {3.908791842678237*^9, 
+   3.908791859300721*^9}, {3.9087918909886665`*^9, 3.9087919087863455`*^9}, 
+   3.9087919455454173`*^9, {3.9087919808522687`*^9, 3.9087920581227293`*^9}, {
+   3.908818205813377*^9, 3.9088182216065917`*^9}, 3.9089007693571873`*^9, 
+   3.908969759805376*^9, {3.908969791194993*^9, 3.9089697999732003`*^9}},
+ CellLabel->"Out[14]=",ExpressionUUID->"1faf7d0c-de13-4082-9ba5-072bef008a04"]
+}, Open  ]]
+},
+WindowSize->{1380, 829},
+WindowMargins->{{Automatic, -1949}, {24, Automatic}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 9, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ab3ed869-98d2-46b4-a21a-0f86dda0abb2"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1868, 52, 75, "Input",ExpressionUUID->"c585ffee-35f2-4740-ba3b-867f9b542cc6"],
+Cell[2451, 76, 3378, 59, 367, "Output",ExpressionUUID->"1faf7d0c-de13-4082-9ba5-072bef008a04"]
+}, Open  ]]
+}
+]
+*)
+
